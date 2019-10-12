@@ -19,3 +19,4 @@ def row_counter
     stats_table = text.join(",").split(",") #transforms into usable array
     all_team_data_save << Array.new(stats_table) #saves data inside an array    
   end
+end
