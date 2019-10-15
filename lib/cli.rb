@@ -25,6 +25,7 @@ end
 def choose_again
   puts "Would you like to see a new team? Y/N"
   input = gets.strip
+  input = input.upcase
   if input == "Y"
     table_printer(@all_team_data_save)
     team_selector
