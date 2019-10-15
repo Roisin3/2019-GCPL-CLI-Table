@@ -9,7 +9,6 @@ all_team_data_save = []
 
 # Scrapes only team standings from HTML table and shovels into array
 
-def row_counter
   counter = 1
   while counter >=1 && counter <=18
     trimmed_table = doc.css("//tr")[counter] #selects rows with teams
@@ -19,4 +18,3 @@ def row_counter
     stats_table = text.join(",").split(",") #transforms into usable array
     all_team_data_save << Array.new(stats_table) #saves data inside an array    
   end
-end
