@@ -1,5 +1,5 @@
-require_relative './scraper.rb'
-require_relative './team.rb'
+require_relative '../scraper.rb'
+require_relative '../team.rb'
 
 def table_printer(array)
   counter = 0 
