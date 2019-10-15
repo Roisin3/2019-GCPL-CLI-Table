@@ -1,4 +1,7 @@
-require './cli.rb'
+#!/usr/bin/env/ ruby
+
+require_relative '../lib/team.rb'
+require_relative '../lib/cli.rb'
 
 puts "Welcome to 2019 GCPL table printer!"
 puts Select a team to view:"
