@@ -1,2 +1,10 @@
 require './cli.rb'
 
+puts "Welcome to 2019 GCPL table printer!"
+puts Select a team to view:"
+
+table_printer(@all_team_data_save)
+team_array_build(@all_team_data_save)
+team_selector
+choose_again
+
