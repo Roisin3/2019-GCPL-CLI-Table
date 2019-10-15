@@ -21,8 +21,10 @@ team_array_build(all_team_data_save)
 
 def team_selector
   input = gets.chomp
-  input = input.to_i
-  Team.all[input]
+  input = input.to_i - 1
+  table = " Team Name: #{Team.all[input].team_name}\n Games Played: #{Team.all[input].games_played}\nWins:#{Team.all[input].wins}\n Losses:  | Draws | Points | Goals For | Goals Against"
+  
+  puts table
 end
 
 team_selector
