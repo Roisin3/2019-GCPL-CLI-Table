@@ -1,1 +1,5 @@
-Scrapes ***site*** and builds shows team data (name, wins, losses, draws, points, goals scored, and goals against.
+2019 GCPL CLI Table Printer
+
+Scrapes http://gcplsoccer.bonzidev.com/sam/standings/ss/schedule.php?v=3&divisionID=NDE4MjM5/* and prints selected team stats for the season.
+
+INSTALLATION
