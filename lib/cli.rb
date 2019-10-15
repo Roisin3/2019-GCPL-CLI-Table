@@ -15,10 +15,6 @@ def cli_printer
   puts "Select a team to view:"
 end
 
-cli_printer
-table_printer(@all_team_data_save)
-team_array_build(@all_team_data_save)
-
 def team_selector
   input = gets.chomp
   input = input.to_i - 1
@@ -26,4 +22,24 @@ def team_selector
   puts table
 end
 
+def choose_again
+  puts "Would you like to see a new team? Y/N"
+  input = gets.strip
+  if input == "Y"
+    table_printer(@all_team_data_save)
+    team_selector
+    choose_again
+  elsif input == "N"
+    puts "Thank you!"
+  else
+    puts "Please select Y or N"
+    choose_again
+  end
+end
+
+cli_printer
+table_printer(@all_team_data_save)
+team_array_build(@all_team_data_save)
 team_selector
+choose_again
+
