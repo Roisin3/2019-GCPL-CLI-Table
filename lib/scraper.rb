@@ -1,5 +1,5 @@
-require "nokogiri"
 require "open-uri"
+require "nokogiri"
 
 site = "http://gcplsoccer.bonzidev.com/sam/standings/ss/schedule.php?v=3&divisionID=NDE4MjM5/*"
 
