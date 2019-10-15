@@ -1,5 +1,5 @@
-require_relative './scraper.rb'
-require_relative './cli.rb'
+require_relative '../scraper.rb'
+require_relative '../cli.rb'
 
 class Team
   attr_reader :team_name, :games_played, :wins, :losses, :draws, :points, :goals_for, :goals_against
