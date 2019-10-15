@@ -16,8 +16,8 @@ def cli_printer
 end
 
 cli_printer
-table_printer(all_team_data_save)
-team_array_build(all_team_data_save)
+table_printer(@all_team_data_save)
+team_array_build(@all_team_data_save)
 
 def team_selector
   input = gets.chomp
