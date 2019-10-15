@@ -43,9 +43,11 @@ def choose_again
   end
 end
 
-cli_printer
-table_printer(@all_team_data_save)
-team_array_build(@all_team_data_save)
-team_selector
-choose_again
+def print
+  cli_printer
+  table_printer(@all_team_data_save)
+  team_array_build(@all_team_data_save)
+  team_selector
+  choose_again
+end
 
