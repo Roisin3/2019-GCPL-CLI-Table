@@ -16,10 +16,15 @@ def cli_printer
 end
 
 def team_selector
-  input = gets.chomp
-  input = input.to_i - 1
-  table = " Team Name: #{Team.all[input].team_name}\t Games Played: #{Team.all[input].games_played}\n Wins:#{Team.all[input].wins}\t Losses: #{Team.all[input].losses}\t Draws: #{Team.all[input].draws}\t Points: #{Team.all[input].points}\n Goals For: #{Team.all[input].goals_for}\t Goals Against: #{Team.all[input].goals_against}"
-  puts table
+  input = gets.strip.to_i
+  input -= 1
+  if input <= 18
+    table = "Team Name: #{Team.all[input].team_name}\t Games Played: #{Team.all[input].games_played}\n Wins:#{Team.all[input].wins}\t Losses: #{Team.all[input].losses}\t Draws: #{Team.all[input].draws}\t Points: #{Team.all[input].points}\n Goals For: #{Team.all[input].goals_for}\t Goals Against: #{Team.all[input].goals_against}"
+    puts table
+  else
+    puts "Please select a valid team"
+    team_selector
+  end
 end
 
 def choose_again
