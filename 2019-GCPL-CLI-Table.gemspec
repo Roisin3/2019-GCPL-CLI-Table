@@ -1,4 +1,4 @@
-require_relative '.lib/2019-GCPL-CLI-Table/version'
+require_relative './lib/2019-GCPL-CLI-Table/version'
 
 Gem::Specifictation.new do |s|
   s.name = '2019-GCPL-CLI-Table'
