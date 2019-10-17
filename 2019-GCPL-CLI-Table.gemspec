@@ -8,6 +8,7 @@ Gem::Specifictation.new do |s|
   s.authors = 'Michael Lynch'
   s.email = 'michael@michaelrlynch.com'
   s.files = ["lib/cli.rb", "lib/team.rb", "lib/scraper.rb"]
+  s.executables << '2019-GCPL-CLI-Table'
   s.homepage = 'https://rubygems.org/gems.2019-GCPL-CLI-Table'
   s.license = 'MIT'
  end
